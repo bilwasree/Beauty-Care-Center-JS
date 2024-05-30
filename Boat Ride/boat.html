@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Ride</title>
+    <link rel="stylesheet" href ="boat.css">
+</head>
+<body>
+    <form onsubmit="return false">
+    <div >
+    <table>
+        <h2 id="heading">Boat Ride Bill Automation</h2>
+      <tr>
+        <td><p>Customer Name</p></td>
+        <td><input type="text" placeholder="Enter your name"> </td>
+      </tr>
+      <tr>
+        <td><p>Phone Number</p></td>
+        <td><input type="text" placeholder="Enter your number"> </td>
+      </tr>
+      <tr>
+        <td><p>Email</p></td>
+        <td><input type="mail" placeholder="abc@gmail.com"> </td>
+      </tr>
+      <tr>
+        <td><p>Number of persons</p></td>
+        <td><input type="number" min="0" value="0" id="noOfPersons"> </td>
+      </tr>
+      <tr>
+        <td><p>Boat Type</p></td>
+            <td><select id="seatCount">
+                <option value='2' id="2seater">2 seater padel boat</option>
+                <option value='4' id="4seater">4 seater padel boat</option>
+                <option value='8' id="8seater">8 seater padel boat</option>
+                <option value='15' id="15seater">15 seater padel boat</option>
+            </select> </td>
+      </tr>
+      <tr>
+        <td><p>Travel Duration in Hours</p></td>
+        <td><input type="text" value="0" min="0" placeholder="" id="duration"> </td>
+      </tr>
+    </table>
+    <button type="submit" onclick="personCount()">Book Ride</button>
+
+    <p id="total"></p>
+    </div>
+    </form>
+    <script src="boat.js"></script>
+</body>
+</html>
